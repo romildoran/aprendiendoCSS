@@ -1,0 +1,39 @@
+/* fuentes personalizadas */
+@font-face{
+    font-family: AsulFont;
+    src:url(fonts/Asul-Regular.ttf);
+}
+
+h1{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 45px;
+
+    /* colores */
+    /* colores del sistema */
+    color: mediumpurple;
+
+    /* colores hexadecimales */
+    color: #ccc;
+    
+    /* colores RGB  */
+color: rgb(255, 255, 107, 0.5);
+
+    /* colores RGBA    */
+    color: rgba(90, 77, 120, 0.8);
+}
+
+h3{
+    font-family: AsulFont, "comic sans MS";
+    font-size: 35px;
+    font-weight: lighter;
+    color: olive;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}

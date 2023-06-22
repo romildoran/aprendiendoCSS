@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearFix {
+    float: none;
+    clear: both;
+}
+
+#container {
+    width: 70%;  /* se utilizan medidas en porcentaje para lograr un diseño responsivo */
+    background: red;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background: lightskyblue;
+    color: #333;
+    line-height: 150px;
+    text-align: center;
+}
+
+aside {
+    width: 25%;
+    background: #ccc;
+    float: left;
+    min-height: 700px;
+    text-align: center;
+    line-height: 700px;
+}
+
+#article {
+    background-color: lemonchiffon;
+    width: 75%;
+    min-height: 700px;
+    float: left;
+}
+
+#article article {
+    width: 25%;
+    height: 150px;
+    background: green;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid white;
+    float: left;
+    margin: 15px;
+}
+
+/* responsive */
+
+@media(max-width: 888px) {
+
+    /*esto significa que: desde la anchura 0px hasta la 888px va a tener unos estilos*/
+    /* medidas superiores, o apartir de, 888px va a tener el css de arriba */
+
+    #article article {
+        width: 40px;
+        background: red;
+    }
+}
+
+@media (max-width: 632px) {
+
+    /* para este segundo PUNTO DE CORTE el */
+    /* css para medidas de ancho inferiores a 632px */
+
+    #container {
+        overflow: hidden;
+    }
+
+    #article article {
+        width: 90%;
+        background: blue;
+    }
+
+    aside {
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 91%;
+        padding: 19px;
+    }
+
+    #article {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 554px) {
+
+    /* corte de estilos menores a 554px */
+    body {
+        background: lightsalmon;
+    }
+}

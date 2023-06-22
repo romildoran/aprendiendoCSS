@@ -1,0 +1,274 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#container {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225, 225, 226, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    min-height: 600px;
+}
+
+#header {
+    display: flex;
+    /* se pone un elemento al lado del otro */
+    flex-direction: row;
+    /* se va a comprotar en formato de fila, como lo hace por defecto */
+    flex-wrap: wrap;
+    /* si algo se sale de la caja esto lo pone debajo */
+    align-items: center;
+    /* esto lo va a centrar verticalmente */
+
+    height: 120px;
+    border-bottom: rgba(225, 225, 226, 0.8);
+    ;
+}
+
+.logo {
+    flex-grow: 1;
+    /* esto es para que cando la pantalla se reduzca ocupe todo el ancho*/
+    flex-basis: 65%;
+    /* le asigna un tamaño al logo de un 65% de la caja */
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 10px;
+    margin-left: 20px;
+    color: black;
+    text-shadow: 1px 1px 0px #ccc;
+    text-transform: uppercase;
+}
+
+.logo h1 {
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 900px;
+    font-size: 35px;
+}
+
+#menu {
+    flex-grow: 1;
+    flex-basis: 30%;
+    height: 100%;
+    padding-right: 20px;
+}
+
+#menu>ul
+
+/* solo cambia el primer ul del menu, el ul hijo */
+    {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* genera un espacio entre los items*/
+    list-style: none;
+    /* quita los puntos de los items */
+}
+
+#menu a {
+    text-transform: uppercase;
+    color: #444;
+    padding: 15px;
+    transition: all 300ms;
+    font-size: 13px;
+}
+
+#menu a:hover {
+    color: white;
+    background: #ccc;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 80%;
+}
+
+.project {
+    flex-grow: 1;
+    flex-basis: 250px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 10px;
+}
+
+.project-info a {
+    font-size: 16px;
+    color: black;
+    transition: all 300ms;
+}
+
+.project-info a:hover {
+    color: green;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: gray;
+}
+
+#aside {
+    /* order: 1; */
+    flex-basis: 15%;
+    margin-right: 30px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#aside h2 {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px rgba(225, 225, 226, 0.8);
+    text-align: center;
+}
+
+#aside ul {
+    list-style: none;
+}
+
+#aside ul li {
+    padding-bottom: 20px;
+}
+
+#aside a {
+    display: block;
+    padding: 20px;
+    color: #444;
+    text-align: center;
+    background: #eee;
+    transition: all 300ms;
+    text-transform: uppercase;
+}
+
+#aside a:hover {
+    background: #444;
+    color: #eee;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    height: 120px;
+    align-items: center;
+    border-top: 1px rgba(225, 225, 226, 0.8);
+}
+
+#footer .logo {
+    opacity: 0.5;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#footer .info {
+    flex-grow: 1;
+    order: 1;
+    margin-left: 20px;
+    color: #444;
+}
+
+@media (max-width: 1334px) {
+    #header {
+        text-align: center;
+    }
+
+    #menu>ul {
+        margin-top: 20px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 646px) {
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #aside {
+        margin-right: 0px;
+    }
+
+    #aside ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #aside ul li{
+        flex-grow: 1;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .project{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+
+    #footer .logo {
+        flex-grow: 1;
+        order: 1;
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    #footer .info {
+        flex-grow: 1;
+        order: 2;
+        margin-left: 20px;
+        color: #444;
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+}

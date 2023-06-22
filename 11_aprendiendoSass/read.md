@@ -1,0 +1,3 @@
+los mixins son bloques reutilizables de código que te permiten definir estilos o reglas CSS y luego incluirlos en diferentes selectores en tu código. Los mixins son una de las características clave de Sass y se utilizan para facilitar la reutilización de código y mantener una base de estilos consistente.
+
+Un mixin en Sass se define utilizando la directiva @mixin seguida de un nombre y un conjunto de reglas CSS. Aquí tienes un ejemplo básico de cómo se ve la definición de un mixin en Sass:

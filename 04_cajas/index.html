@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cajas en CSS con Victor Robles</title>
+</head>
+<body>
+    <h1>Cajas en CSS con Victor Robles</h1>
+
+<!-- elementos flotados -->
+    <section id="cajas">
+        <div class="caja">
+            <p>contenido de la caja 1</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 2</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 3</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 4</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 5</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 6</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 7</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 8</p>
+        </div>
+        <div class="caja">
+            <p>contenido de la caja 9</p>
+        </div>
+
+<!-- este elementos se va a encargar de limpiar los flotados -->
+<!-- al tener este div va a hacer que el navegador no tenga en cuenta los elementos flotados (cajas) y los elementos siguientes regresen a la posicion prederterminada (a la izquiwerda) -->
+    <div class="clearFix"> 
+
+    </div>
+
+    </section>
+
+<!-- elementos no flotados mantenidos abajos, no al lado de las cajas -->
+    <h2>Contenido despues de las cajas posicionadas</h2>
+    <p>
+        Texto de prueba <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus atque ad ullam voluptas totam debitis itaque quia a aliquam quisquam quis repellat quod cupiditate sapiente tenetur aut, maiores sed eveniet?
+    </p>
+</body>
+</html>

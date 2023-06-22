@@ -1,0 +1,33 @@
+/* body{
+    background-color: #ccc;
+    background-image: url("images/Dark-Patterns-Frame.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; para que el fondo no se mueva
+    background-position: left bottom; mueve la imagen del fondo
+    color: white;
+}
+*/
+
+body{
+    color: black;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(94, 131, 212);
+    color: white;
+    font-family: "Open Sans";
+    text-align: justify;
+}
+
+h2{
+    color: red;
+    background: white;
+    border: 5px solid red;
+    background-image: url("images/patron1.jpg");
+    border: 5px solid red;
+}

@@ -1,0 +1,1 @@
+el instructor hace recomendacion el uso de la extencion para el nevagador llamada "web developer toolbar"
